@@ -14,17 +14,23 @@ Remote data logger project for use in engineering development and debugging of e
 ![pcb](./pics/pcb_layout.png)
 
 ### Firmware
-- ADC reading
-- UART read/write
-- Store values to uSD card
-- Send values via WiFi/ MQTT
+- <span style="color:green">Written in Rust</span>
+- <span style="color:green">Utilize [static](https://github.com/mdeloof/statig) heirarchical state machine</span>
+- <span style="color:green">Multi-threaded</span>
+- <span style="color:green">ADC reading</span>
+- <span style="color:red">UART CLI</span>
+- <span style="color:red">Store values to uSD card
+- <span style="color:red">Connect to WiFi</span>
+- <span style="color:red">Send message with MQTT</span>
 
 ### Software
-- Graph readings from ESP32-C3
-- Talk with ESP32-C3 through Wi-Fi
-- Talk with ESP32-C3 through UART
+- <span style="color:green">Graph readings from ESP32-C3 through UART</span>
+    - [Serial Console Oscilloscope](https://github.com/shanemmattner/Serial_Console_Oscilloscope)
 
-## Git
+
+## Notes
+
+### Git
 Update submodules manually:
 ```
 git submodule update  --init --recursive
