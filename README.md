@@ -5,21 +5,24 @@ Remote data logger project for use in engineering development and debugging of e
 
 ### Hardware
 - ESP32-C3 circuit
-- uart connection to target
-- uSD card
+- 5 ADC
 - 16 GPIO
+- USB-C
+- uSD card
+- 44mm x 33mm
+
+![pcb](./pics/pcb_layout.png)
 
 ### Firmware
 - ADC reading
 - UART read/write
 - Store values to uSD card
-- Send values via WiFi
+- Send values via WiFi/ MQTT
 
 ### Software
 - Graph readings from ESP32-C3
 - Talk with ESP32-C3 through Wi-Fi
 - Talk with ESP32-C3 through UART
-
 
 ## Git
 Update submodules manually:
@@ -32,7 +35,6 @@ Configure repo to use custom `.githooks` path and make files executable:
 git config --local core.hooksPath .githooks/
 chmod -R +x .githooks
 ```
-
 
 ## KiCAD Hotkeys
 - `e` while routing:  change parameters of trace
